@@ -56,7 +56,7 @@ export const initializePayment = asyncHandler(async (req, res) => {
       email,
       amount: amountInKobo,
       currency: "NGN",
-      callback_url: `${process.env.CLIENT_URL || "http://localhost:5173"}/checkout`,
+      callback_url: `${process.env.CLIENT_URL}/checkout`,
       metadata: {
         brand: "OMD Hairville",
         deliveryMethod,
